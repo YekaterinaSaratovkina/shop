@@ -1,0 +1,40 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+    gap: 2rem;
+}
+.nameCategory{
+    font-size: 2rem;
+}
+.wrapperContent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.content{
+    width: 380px;
+    max-width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 0.2rem solid #000;
+    background-color: blueviolet;
+    padding: 1.8rem;
+}
+.img{
+    max-width: 30rem;
+}
+.itemTitle{
+    font-size: 1.6rem
+}
+.itemBtn{
+    background-color: chartreuse;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: auto;
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
