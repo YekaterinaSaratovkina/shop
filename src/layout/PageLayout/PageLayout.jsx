@@ -14,7 +14,7 @@ const PageLayout = () => {
                 <main className={styles.main}>
                     <Outlet />{/* рендер всех страниц */}
                 </main>
-                <footer>Footer</footer>
+                {/* <footer>Footer</footer> */}
             </div>
 
         </div>
