@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React,{ useEffect, useState } from 'react'
 import styles from './Sidebar.module.css'
-import {Link} from 'react-router'
+import {Link} from 'react-router-dom'
 
 const Sidebar = () => {
     const [categories, setCategories] = useState([]);
@@ -20,7 +20,6 @@ const Sidebar = () => {
               </li>
           ))}
         </ul>
-        <Link to="/">Все товары</Link>
       </aside>
     )
 }

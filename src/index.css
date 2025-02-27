@@ -1,11 +1,15 @@
-:root{
-    --colors__white: #fff;
-    --colors__black: #000;
-
+:root {
+    --colors__white: #ffffff;
+    --colors__black: #27263D;
+    --colors__green: #7AA899;
+    --colors__purple: #8B7AAB;
+    --colors__dark: #3B3A3D;
+    --colors__gray: #6E6C78;
 }
+
 html {
     font-size: 10px;
-    /* 1 rem = 10px*/
+    /* 1rem = 10px */
 }
 
 * {
@@ -29,7 +33,6 @@ a:visited {
 a:hover {
     text-decoration: none;
 }
-
 
 aside,
 nav,
@@ -55,10 +58,6 @@ ul,
 ul li {
     list-style: none;
 }
-
-
-
-
 
 input,
 textarea,

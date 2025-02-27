@@ -2,7 +2,7 @@ const product = "/product/:id";
 
 const productRoutes = {
     product: product,
-};
+}
 
 const cart = "/cart";
 
@@ -11,16 +11,15 @@ const cartRoutes = {
 };
 
 const home = "/";
-const category ="/category/:category?"
+const category = "/category/:category?";
 
-const commanRoutes = {
+const commonRoutes = {
     home: home,
     category: category,
 };
 
-export const pageRouts = {
-    commanRoutes,
+export const pageRoutes = {
+    commonRoutes,
     cartRoutes,
     productRoutes,
 };
-

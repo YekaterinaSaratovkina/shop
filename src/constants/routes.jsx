@@ -1,9 +1,9 @@
-import { createBrowserRouter } from "react-router";
-import PageLayout from "../layout/PageLayout/PageLayout";
-import Home from "../pages/Home/Home"
-import Cart from "../pages/Cart/Cart"
-import Product from "../pages/Product/Product"
-import { pageRouts } from "./pageRoutes";
+import { createBrowserRouter } from "react-router-dom";
+import PageLayout from "../layouts/PageLayout/PageLayout";
+import Home from "../pages/Home/Home";
+import Cart from "../pages/Cart/Cart";
+import Product from "../pages/Product/Product";
+import { pageRoutes } from "./pageRoutes";
 
 const router = createBrowserRouter([
     {
@@ -11,22 +11,22 @@ const router = createBrowserRouter([
         element: <PageLayout />,
         children: [
             {
-                path: pageRouts.commanRoutes.home,
-                element: <Home />
+                path: pageRoutes.commonRoutes.home,
+                element: <Home />,
             },
             {
-                path: pageRouts.commanRoutes.category,
-                element: <Home />
+                path: pageRoutes.commonRoutes.category,
+                element: <Home />,
             },
             {
-                path: pageRouts.cartRoutes.cart,
+                path: pageRoutes.cartRoutes.cart,
                 element: <Cart />,
             },
             {
-                path: pageRouts.productRoutes.product,
-                element: <Product />
+                path: pageRoutes.productRoutes.product,
+                element: <Product />,
             },
-        ]
+        ],
     }
 ]);
 

@@ -1,7 +1,6 @@
-import { Outlet } from "react-router";
+import { Outlet } from "react-router-dom";
 import Header from "../../components/Header/Header";
-import Sidebar from "../../components/Sidebar/Sidebar";
-
+import Sidebar from "../../components/Sidebar/Sidebar"
 import styles from "./PageLayout.module.css"
 
 const PageLayout = () => {
