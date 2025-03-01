@@ -5,8 +5,12 @@ import styles from "./ProductsList.module.css"
 // import Pagination from '../../../components/ui/Pagination/Pagination';
 import ProductCard from '../ProductCard/ProductCard';
 import { SERVER_URL } from '../../../constants/constans';
+import useDeviceDetect from '../../../hooks/useDeviceDetect/useDeviceDetect';
 
 const ProductList = () => {
+    const test = useDeviceDetect();
+    console.log(test);
+    
     const limit = 9;
     const skip = 0;
     const { category } = useParams();
