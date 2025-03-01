@@ -26,17 +26,17 @@ const Cart = () => {
             id: product.id,
             quantity: product.quantity
         }));
-        
+
         fetch('https://dummyjson.com/carts/add', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-              userId: 1,
-              products: products,
+                userId: 1,
+                products: products,
             })
-          })
-          .then(res => res.json())
-          .then(console.log);
+        })
+            .then(res => res.json())
+            .then(console.log);
     }
 
     return (
@@ -50,7 +50,7 @@ const Cart = () => {
                         title={product.title}
                         price={product.price}
                         quantity={product.quantity}
-                        
+
                     />
                 ))}
             </div>

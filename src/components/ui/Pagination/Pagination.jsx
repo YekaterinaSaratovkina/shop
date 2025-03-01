@@ -2,7 +2,7 @@ import { Pagination as PaginationMUI, Stack } from "@mui/material"
 
 const Pagination = ({
     onClick,
-    color ="secondary",
+    color = "secondary",
     count,
     productsPerPage,
     totalProducts,
@@ -10,14 +10,14 @@ const Pagination = ({
 
     return (
         <Stack spacing={2}>
-        <PaginationMUI 
-        count={count} 
-        color={color} 
-        onClick={onClick} 
-        totalProducts={totalProducts}
-        >
+            <PaginationMUI
+                count={count}
+                color={color}
+                onClick={onClick}
+                totalProducts={totalProducts}
+            >
 
-        </PaginationMUI>
+            </PaginationMUI>
         </Stack>
     )
 }

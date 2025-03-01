@@ -4,6 +4,7 @@ import heart from "../../assets/icons/heart_icon.svg";
 import styles from './Header.module.css';
 import { Link } from "react-router-dom";
 import { pageRoutes } from '../../constants/pageRoutes';
+import { Search } from "../Search/Search";
 
 const Header = () => {
 
@@ -11,9 +12,7 @@ const Header = () => {
         <header className={styles.header}>
             <Link to={pageRoutes.commonRoutes.home}><img src={logo} alt="logo" /></Link>
 
-            <div className={styles.wrapper_search}>
-                <input type="search" placeholder="search" />
-            </div>
+            <Search />
 
             <div className={styles.wrapper_btns}>
                 <Link to={pageRoutes.cartRoutes.cart} className={styles.btn}><img src={heart} alt="cart" /></Link>

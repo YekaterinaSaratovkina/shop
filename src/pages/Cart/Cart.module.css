@@ -1,6 +1,7 @@
-*{
+* {
     font-family: Arial;
 }
+
 .content {
     display: flex;
     flex-wrap: wrap;
